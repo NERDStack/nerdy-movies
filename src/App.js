@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Movies from './Movies';
+// import Movies from './Movies';
+import MoviesContainer from './MoviesContainer';
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
           <h2>Nerdy Movies</h2>
         </div>
         <div className="App-content">
-          <Movies />
+          <MoviesContainer />
         </div>
       </div>
     );
