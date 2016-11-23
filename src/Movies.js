@@ -9,7 +9,7 @@ const Movies = () => {
         <Movie 
           key={idx}
           name={val}
-          description="Movie description here" />);
+          description=`Movie description here ${val}` />);
 
   return (
     <div className="Movies">
