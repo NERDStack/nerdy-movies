@@ -10,9 +10,12 @@ class MoviesContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      movies: []
-    };
+    const moviesApiUrl = `/api/movies`;
+    fetch(moviesApiUrl)
+      .then(res => res.json())
+      .then(movies => {
+        movies.forEach(this.props.actions.addMovie);
+      });
   }
 
   render() {
