@@ -1,10 +1,10 @@
 import React from 'react';
 import Movie from './Movie';
-import './Movies.css';
+import './MoviesList.css';
 
 const MoviesList = ({ movies }) => {
   return (
-    <div className="Movies">
+    <div className="MoviesList">
       {movies.map((movie, idx) =>
         <Movie key={idx}
           name={movie.name}
