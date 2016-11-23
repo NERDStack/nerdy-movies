@@ -15,5 +15,9 @@ router.get('/movies', (req, res) => {
     });
 });
 
+router.post('/movies/:id/like', (req, res) => {
+  data.likeMovie() // wip
+});
+
 module.exports = router;
 
