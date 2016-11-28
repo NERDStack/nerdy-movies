@@ -16,8 +16,9 @@ export default (state = [], action) => {
       return stateCopy;
     case types.UNLIKE_MOVIE:
       for (i = 0; i < stateCopy.length; i++) {
-        if (action.movieId === stateCopy[i].id) {
+        if (action.movieId === parseInt(stateCopy[i].id)) {
           stateCopy[i].liked = false;
+          break;
         }
       }
       return stateCopy;

@@ -14,6 +14,9 @@ const Movie = (props) => {
         {props.voteCount}
         <i className="fa fa-camera-retro"></i>
       </div>
+      <div onClick={ props.unlikeMovie }>
+        <i className="fa fa-camera"></i>
+      </div>
     </div>
   );
 };

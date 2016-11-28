@@ -10,7 +10,7 @@ const MoviesList = ({ movies, likeMovie, unlikeMovie }) => {
           name={movie.name}
           description={`description ${movie.name}`}
           likeMovie={likeMovie.bind(null, idx)}
-          unlikeMovie={unlikeMovie} />
+          unlikeMovie={unlikeMovie.bind(null, idx)} />
       )}
     </div>
   );
