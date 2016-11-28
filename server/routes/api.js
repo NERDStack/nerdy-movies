@@ -6,7 +6,7 @@ router.get('/movies', (req, res) => {
   data.queryMovies()
     .then(docs => {
       const movies = docs.map(doc => {
-        return { id: doc.id, name: doc.name };
+        return { id: doc.id, name: doc.name, liked: doc.liked };
       });
       return res.json(movies);
     })

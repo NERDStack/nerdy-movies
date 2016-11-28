@@ -25,7 +25,7 @@ class MoviesContainer extends Component {
       <div className="MoviesContainer">
         <MovieInput addMovie={this.props.actions.addMovie} />
         <MoviesList movies={movies}
-          likeMovie={this.props.actions.likeMovie}
+          likeMovie={this.props.actions.likeMovieAndPersist}
           unlikeMovie={this.props.actions.unlikeMovie} />
       </div>
     );

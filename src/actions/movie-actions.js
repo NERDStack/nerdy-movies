@@ -21,3 +21,16 @@ export const unlikeMovie = (movieId) => {
   };
 };
 
+export const likeMovieAndPersist = (movieId) => {
+  return (dispatch) => {
+    const moviesUrl = `/api/movies/${movieId}/like`;
+    fetch(moviesUrl, { method: 'POST' })
+      .then(() => {
+        dispatch(likeMovie(movieId));
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+};
+
