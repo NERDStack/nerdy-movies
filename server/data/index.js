@@ -63,8 +63,24 @@ module.exports = (() => {
     });
   }
 
-  function unlikeMovie(id) {
+  function unlikeMovie(movie) {
+    return new Promise((resolve, reject) => {
+      const docdbClient = new DocumentDBClient(
+        process.env.DOCUMENTDB_URI,
+        { masterKey: process.env.DOCUMENTDB_KEY });
 
+      const documentLink = movie._self;
+      const movieUpdate = Object.assign({}, movie, { liked: false });
+
+      docdbClient.replaceDocument(documentLink, movieUpdate, (err, updated) => {
+        if (err) {
+          reject(err);
+        }
+        else {
+          resolve(updated);
+        }
+      });
+    });
   }
 
   return {

@@ -25,8 +25,26 @@ router.post('/movies/:id/like', (req, res) => {
         return res.send(`no movie found with id ${req.params.id}`);
       }
     })
-    .then(res => {
+    .then(response => {
+      return res.json(response);
+    })
+    .catch(err => {
       return res.json(err);
+    });
+});
+
+router.post('/movies/:id/unlike', (req, res) => {
+  data.queryMovies(req.params.id)
+    .then(docs => {
+      if (docs.length > 0) {
+        return data.unlikeMovie(docs[0]);
+      }
+      else {
+        return res.send(`no movie found with id ${req.params.id}`);
+      }
+    })
+    .then(response => {
+      return res.json(response);
     })
     .catch(err => {
       return res.json(err);
