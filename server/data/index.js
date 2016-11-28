@@ -47,7 +47,6 @@ module.exports.likeMovie = (movie) => {
       process.env.DOCUMENTDB_URI,
       { masterKey: process.env.DOCUMENTDB_KEY });
 
-    // const documentLink = `${collLink}/${movie.id}`;
     const documentLink = movie._self;
     const movieUpdate = Object.assign({}, movie, { liked: true });
 
