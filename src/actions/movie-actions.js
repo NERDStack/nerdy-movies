@@ -7,3 +7,17 @@ export const addMovie = (movie) => {
   };
 }
 
+export const likeMovie = (movieId) => {
+  return {
+    type: types.LIKE_MOVIE,
+    movieId
+  };
+};
+
+export const unlikeMovie = (movieId) => {
+  return {
+    type: types.UNLIKE_MOVIE,
+    movieId
+  };
+};
+
