@@ -22,6 +22,10 @@ class Movie extends Component {
   }
 
   render() {
+    if (!this.state.posterUrl) {
+      return <div />;
+    }
+
     return (
       <div className="Movie">
         <div>
