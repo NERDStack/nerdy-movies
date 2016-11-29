@@ -3,14 +3,22 @@
 }
 
 .App-logo {
-  height: 80px;
+  height: 120px;
+  margin-right: 30px;
 }
 
 .App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #1E88E5;
   height: 120px;
   padding: 20px;
   color: white;
+}
+
+.App-header h2 {
+  font-size: 3em;
 }
 
 .App-intro {
