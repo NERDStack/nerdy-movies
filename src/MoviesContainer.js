@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as movieActions from './actions/movie-actions';
 import MoviesList from './MoviesList';
-import MovieInput from './MovieInput';
 import './MoviesContainer.css';
 
 class MoviesContainer extends Component {
@@ -23,7 +22,6 @@ class MoviesContainer extends Component {
 
     return (
       <div className="MoviesContainer">
-        <MovieInput addMovie={this.props.actions.addMovie} />
         <MoviesList movies={movies}
           likeMovie={this.props.actions.likeMovieAndPersist}
           unlikeMovie={this.props.actions.unlikeMovieAndPersist} />
