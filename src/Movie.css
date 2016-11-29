@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   flex: 0 0 200px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 50px 10px;
 }
 
 .Movie-poster {
   max-width: 200px;
+}
+
+.Movie-voters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
