@@ -8,9 +8,6 @@ const Movie = (props) => {
         {props.name}
       </div>
       <div>
-        {props.description}
-      </div>
-      <div>
         {props.liked ? "Love it!" : "Hate it"}
       </div>
       <div onClick={ props.likeMovie }>
