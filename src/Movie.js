@@ -32,14 +32,11 @@ class Movie extends Component {
             className="Movie-poster"
             src={this.state.posterUrl} />
         </div>
-        <div>
-          {this.props.liked ? "Love it!" : "Hate it"}
-        </div>
         <div onClick={ this.props.likeMovie }>
-          <i className="fa fa-camera-retro"></i>
+          <i className={"fa fa-3x " + (this.props.liked ? 'fa-thumbs-up' : 'fa-thumbs-o-up')}></i>
         </div>
         <div onClick={ this.props.unlikeMovie }>
-          <i className="fa fa-camera"></i>
+          <i className={"fa fa-3x " + (this.props.liked ? 'fa-thumbs-o-down' : 'fa-thumbs-down')}></i>
         </div>
       </div>
     );
