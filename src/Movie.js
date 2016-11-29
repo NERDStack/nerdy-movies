@@ -10,8 +10,10 @@ const Movie = (props) => {
       <div>
         {props.description}
       </div>
+      <div>
+        {props.liked ? "Love it!" : "Hate it"}
+      </div>
       <div onClick={ props.likeMovie }>
-        {props.voteCount}
         <i className="fa fa-camera-retro"></i>
       </div>
       <div onClick={ props.unlikeMovie }>

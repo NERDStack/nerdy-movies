@@ -9,6 +9,7 @@ const MoviesList = ({ movies, likeMovie, unlikeMovie }) => {
         <Movie key={idx}
           name={movie.name}
           description={`description ${movie.name}`}
+          liked={movie.liked}
           likeMovie={likeMovie.bind(null, idx)}
           unlikeMovie={unlikeMovie.bind(null, idx)} />
       )}
