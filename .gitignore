@@ -17,3 +17,6 @@ npm-debug.log
 # local start script
 scripts/start-local.sh
 
+# planning directory
+planning/
+
