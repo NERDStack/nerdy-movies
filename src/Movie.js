@@ -8,6 +8,9 @@ const Movie = (props) => {
         {props.name}
       </div>
       <div>
+        <img src="http://netflixroulette.net/api/posters/70098333.jpg" />
+      </div>
+      <div>
         {props.liked ? "Love it!" : "Hate it"}
       </div>
       <div onClick={ props.likeMovie }>
