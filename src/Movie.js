@@ -11,7 +11,6 @@ class Movie extends Component {
   }
 
   componentDidMount() {
-    console.log(`in componentDidMount for ${this.props.name}`);
     const apiUrl = `http://netflixroulette.net/api/api.php?title=${encodeURIComponent(this.props.name)}`;
     fetch(apiUrl)
       .then(res => res.json())
