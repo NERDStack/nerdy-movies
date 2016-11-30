@@ -25,3 +25,21 @@
   justify-content: space-around;
 }
 
+.Movie-like {
+  color: green;
+  cursor: pointer;
+}
+
+.Movie-unlike {
+  color: red;
+  cursor: pointer;
+}
+
+.Movie-vote-selected {
+  opacity: 0.9;
+}
+
+.Movie-vote-unselected {
+  opacity: 0.15;
+}
+

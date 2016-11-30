@@ -37,10 +37,16 @@ class Movie extends Component {
         </div>
         <div className="Movie-voters">
           <div onClick={ this.props.likeMovie }>
-            <i className={"fa fa-3x " + (this.props.liked ? 'fa-thumbs-up' : 'fa-thumbs-o-up')}></i>
+            <i className={
+              "fa fa-3x fa-check Movie-like " +
+              (this.props.liked ? 'Movie-vote-selected' : 'Movie-vote-unselected')
+            }></i>
           </div>
           <div onClick={ this.props.unlikeMovie }>
-            <i className={"fa fa-3x " + (this.props.liked ? 'fa-thumbs-o-down' : 'fa-thumbs-down')}></i>
+            <i className={
+              "fa fa-3x fa-times Movie-unlike " +
+              (this.props.liked ? 'Movie-vote-unselected' : 'Movie-vote-selected')
+            }></i>
           </div>
         </div>
       </div>
