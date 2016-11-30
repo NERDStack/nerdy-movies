@@ -27,7 +27,7 @@ class Movie extends Component {
 
     return (
       <div className="Movie">
-        <div>
+        <div className="Movie-title">
           {this.props.name}
         </div>
         <div>
