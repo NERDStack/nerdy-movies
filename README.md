@@ -17,5 +17,5 @@ In order to run this locally, you need to do the following...
 
 ## Credits
 
-*This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).*
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
