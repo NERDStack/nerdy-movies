@@ -64,6 +64,7 @@
     "start-dev": "node scripts/start.js",
     "start-local": ". ./scripts/start-local.sh",
     "start-local-win": "./scripts/start-local.ps1",
+    "cleanup": "mop -v",
     "postinstall": "node scripts/build.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
