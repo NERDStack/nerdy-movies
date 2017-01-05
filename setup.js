@@ -1,5 +1,6 @@
 module.exports = {
   remove: [
+    { file: 'public/favicon.ico' },
     { file: 'server/data/config.js' },
     { file: 'src/actions/action-types.js' },
     { file: 'src/actions/movie-actions.js' },
@@ -13,6 +14,10 @@ module.exports = {
     { file: 'setup.js' }
   ],
   clean: [
+    {
+      file: 'public/index.html',
+      pattern: /Nerdy/
+    },
     {
       file: 'server/data/index.js',
       clear: true
