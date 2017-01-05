@@ -23,7 +23,7 @@ module.exports = {
     },
     {
       file: 'server/routes/api.js',
-      deleteRange: '4,54'
+      deleteRange: '4,53'
     },
     {
       file: 'src/App.js',
