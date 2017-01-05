@@ -1,10 +1,8 @@
 module.exports = {
   remove: [
-    { file: 'server/data/index.js' },
     { file: 'server/data/config.js' },
     { file: 'src/actions/action-types.js' },
     { file: 'src/actions/movie-actions.js' },
-    { file: 'src/reducers/index.js' },
     { file: 'src/reducers/movies-reducer.js' },
     { file: 'src/Movie.css' },
     { file: 'src/Movie.js' },
@@ -15,6 +13,14 @@ module.exports = {
     { file: 'setup.js' }
   ],
   clean: [
+    {
+      file: 'server/data/index.js',
+      clear: true
+    },
+    {
+      file: 'src/reducers/index.js',
+      clear: true
+    },
     {
       file: 'server/routes/api.js',
       deleteRange: '4,54'
@@ -33,8 +39,6 @@ module.exports = {
     }
   ],
   add: [
-    { file: 'server/data/.gitkeep' },
-    { file: 'src/actions/.gitkeep' },
-    { file: 'src/reducers/.gitkeep' }
+    { file: 'src/actions/.gitkeep' }
   ]
 };
