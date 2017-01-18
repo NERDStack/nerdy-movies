@@ -32,7 +32,7 @@ module.exports = {
     },
     {
       file: 'src/App.js',
-      pattern: /Movies/
+      pattern: /Movies|logo/
     },
     {
       file: 'README.md',
