@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       file: 'src/reducers/index.js',
-      clear: true
+      pattern: /movies/
     },
     {
       file: 'server/routes/api.js',
