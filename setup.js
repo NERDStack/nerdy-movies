@@ -35,6 +35,10 @@ module.exports = {
       pattern: /Movies|logo/
     },
     {
+      file: 'src/App.css',
+      deleteRange: '15,16'
+    },
+    {
       file: 'README.md',
       clear: true
     },
