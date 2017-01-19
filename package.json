@@ -63,7 +63,7 @@
     "start": "node server",
     "start-dev": "node scripts/start.js",
     "start-local": ". ./scripts/start-local.sh",
-    "start-local-win": "./scripts/start-local.ps1",
+    "start-local-win": "powershell.exe ./scripts/start-local.ps1",
     "cleanup": "mop -v",
     "postinstall": "node scripts/build.js",
     "build": "node scripts/build.js",
