@@ -16,6 +16,7 @@ npm-debug.log
 
 # local start script
 scripts/start-local.sh
+scripts/start-local-remote-documentdb.ps1
 
 # planning directory
 planning/
