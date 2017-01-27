@@ -1,5 +1,7 @@
 # Nerdy Movies
 
+:boom: :boom: **If you came here to create a NERD-based web app, please use the [NERD cli](https://github.com/NERDStack/nerd-cli) ** :boom: :boom:
+
 ## What is this?
 
 This is the sample web app that the NERD cli clones and modifies to get the "wheels turning" after a single command.
