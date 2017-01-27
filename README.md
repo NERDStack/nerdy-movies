@@ -1,6 +1,6 @@
 # Nerdy Movies
 
-:boom: :boom: **If you came here to create a NERD-based web app, please use the [NERD cli](https://github.com/NERDStack/nerd-cli) ** :boom: :boom:
+:boom: :boom: **If you came here to create a NERD-based web app, please use the [NERD cli](https://github.com/NERDStack/nerd-cli)** :boom: :boom:
 
 ## What is this?
 
